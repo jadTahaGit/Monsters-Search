@@ -17,3 +17,10 @@
   isLoggedInt: True,
   friends; ["Pavel", "Matt", "Joy"]
   }
+
+# Component Architecture
+
+- Don't Touch the DOM, I will do it for you!
+- Components are basiclly are JS Functions that recives some sort of input or attributes(props) & return JSX. These functions(components) could be used overall in out Applications.
+- Built Components: ReactBootstrap, Blueprint, MatterialUI
+- Advanteges: Search for any Component Built by anyone Else & copyPaste
