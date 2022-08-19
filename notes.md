@@ -24,3 +24,11 @@
 - Components are basiclly are JS Functions that recives some sort of input or attributes(props) & return JSX. These functions(components) could be used overall in out Applications.
 - Built Components: ReactBootstrap, Blueprint, MatterialUI
 - Advanteges: Search for any Component Built by anyone Else & copyPaste
+
+# One Way Data Flow
+
+- It is one more thing that made React very popular
+- Till now we have State(data), Components(JSX) and VirtualDOM
+  whenever the state changes this React function is called (Hey React, build the components again with the new state).
+  function React(state, components){}
+- Data can never move UP . It just move down! That makes Debuging Easy!(Just look where the Data is & where it flows)
