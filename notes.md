@@ -32,3 +32,14 @@
   whenever the state changes this React function is called (Hey React, build the components again with the new state).
   function React(state, components){}
 - Data can never move UP . It just move down! That makes Debuging Easy!(Just look where the Data is & where it flows)
+
+# UI Library
+
+- React workins mainly on views think of it as a robot the does the changes for you
+- That means we can have another robots now talking to ReactRobot & asking for some WebView Changes
+- REACT DOM: React with DOM bzw. Web Browser.
+- REACT Nativ: Change this view in IOS/Android App
+- REACT 3b60 VR APPs
+- Electron & React Desktop for Windows & MacOs & linux OS
+- ReactToBlast for Command
+- Idea of Cross Platforms took of with REACT
