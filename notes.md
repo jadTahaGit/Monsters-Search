@@ -43,3 +43,9 @@
 - Electron & React Desktop for Windows & MacOs & linux OS
 - ReactToBlast for Command
 - Idea of Cross Platforms took of with REACT
+
+# How to Be the Best Senior React Developer?
+
+- Decide on Components (how much do i want to break the component).
+- Decide the State and where it lives (Placing it in the right Component).
+- What changes when state changes What part of VirtuelDOM should rerender?
