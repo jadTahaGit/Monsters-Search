@@ -49,3 +49,7 @@
 - Decide on Components (how much do i want to break the component).
 - Decide the State and where it lives (Placing it in the right Component).
 - What changes when state changes What part of VirtuelDOM should rerender?
+
+# yarn vs npm
+
+Commands: https://www.digitalocean.com/community/tutorials/nodejs-npm-yarn-cheatsheet
