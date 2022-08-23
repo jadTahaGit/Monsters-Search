@@ -53,3 +53,16 @@
 # yarn vs npm
 
 Commands: https://www.digitalocean.com/community/tutorials/nodejs-npm-yarn-cheatsheet
+
+# npm vs npx fun
+
+npm i -g cowsay
+cowsay hello
+npm list cowsay
+npm list -g cowsay
+npm uninstall -g cowsay
+
+npx: (it will download - create & delete)
+npx cowsay hello
+npm list cowsay
+npm list -g cowsay
