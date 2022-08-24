@@ -66,3 +66,10 @@ npx: (it will download - create & delete)
 npx cowsay hello
 npm list cowsay
 npm list -g cowsay
+
+# Webpack & Babels & Ejecting
+
+- Webpack Huge JS APP to js Chunkes
+- Babel will
+- manifest.json (when downloaded) what to put instead of icons/images?
+- Dont eject npx creat-react-app already have the best setup
