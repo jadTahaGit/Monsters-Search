@@ -73,3 +73,8 @@ npm list -g cowsay
 - Babel will
 - manifest.json (when downloaded) what to put instead of icons/images?
 - Dont eject npx creat-react-app already have the best setup
+
+# Classes vs Hooks
+
+- Classes exist in different Programming languages
+- Hooks are React specific
