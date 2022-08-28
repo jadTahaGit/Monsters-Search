@@ -4,22 +4,30 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  // whenever constructed
+  constructor() {
+    // call the constructor of extended Class "Component"
+    super();
+
+    // initiate the state
+    this.state = {
+      name: 'Taha',
+    };
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
+          <p>Hey {this.state.name}</p>
+          <button
+            onClick={() => {
+              this.setState({ name: 'Jad' });
+            }}
           >
-            Learn React
-          </a>
+            Change Name
+          </button>
         </header>
       </div>
     );
