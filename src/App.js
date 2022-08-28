@@ -12,6 +12,8 @@ class App extends Component {
     // initiate the state
     this.state = {
       name: 'Taha',
+      company: 'Coachync',
+      year: '2022',
     };
   }
 
@@ -20,10 +22,25 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>Hey {this.state.name}</p>
+          <p>
+            Hey {this.state.name}, i work at {this.state.company} since{' '}
+            {this.state.year}
+          </p>
           <button
             onClick={() => {
-              this.setState({ name: 'Jad' });
+              this.setState(
+                () => {
+                  console.log(this.state);
+                  return {
+                    name: 'Jad',
+                    company: 'YOTTA DEV',
+                    year: '2020',
+                  };
+                },
+                () => {
+                  console.log(this.state);
+                }
+              );
             }}
           >
             Change Name

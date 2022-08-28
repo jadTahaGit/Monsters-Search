@@ -78,3 +78,17 @@ npm list -g cowsay
 
 - Classes exist in different Programming languages
 - Hooks are React specific
+
+# Concepts:
+
+- Shadow Merge: When updating a State always use the same form (object, string,...)
+- use the new state in your code after SetState directly:
+  ()=>{
+  return {
+  name: 'Jad',
+  company: 'YOTTA DEV',
+  year: '2020',
+  }
+  }, ()=>{
+  console.log(this.state)
+  }
