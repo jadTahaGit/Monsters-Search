@@ -82,7 +82,7 @@ npm list -g cowsay
 # Concepts:
 
 - Shadow Merge: When updating a State always use the same form (object, string,...)
-- use the new state in your code after SetState directly:
+- Secondary Call Back, use the new state in your code after SetState directly:
   ()=>{
   return {
   name: 'Jad',
@@ -92,3 +92,4 @@ npm list -g cowsay
   }, ()=>{
   console.log(this.state)
   }
+  -

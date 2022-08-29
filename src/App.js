@@ -11,9 +11,26 @@ class App extends Component {
 
     // initiate the state
     this.state = {
-      name: 'Taha',
-      company: 'Coachync',
-      year: '2022',
+      monsters: [
+        {
+          name: 'Taha',
+          company: 'Coachync',
+          year: '2022',
+          id: '1',
+        },
+        {
+          name: 'Karim',
+          company: 'Coachync',
+          year: '2022',
+          id: '2',
+        },
+        {
+          name: 'Ali',
+          company: 'Coachync',
+          year: '2022',
+          id: '3',
+        },
+      ],
     };
   }
 
@@ -21,30 +38,10 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Hey {this.state.name}, i work at {this.state.company} since{' '}
-            {this.state.year}
-          </p>
-          <button
-            onClick={() => {
-              this.setState(
-                () => {
-                  console.log(this.state);
-                  return {
-                    name: 'Jad',
-                    company: 'YOTTA DEV',
-                    year: '2020',
-                  };
-                },
-                () => {
-                  console.log(this.state);
-                }
-              );
-            }}
-          >
-            Change Name
-          </button>
+          {this.state.monsters.map((monster) => {
+            return <h1 key={monster.id}>{monster.name}</h1>;
+          })}
+          <button onClick={() => {}}>Change Name</button>
         </header>
       </div>
     );
