@@ -92,4 +92,15 @@ npm list -g cowsay
   }, ()=>{
   console.log(this.state)
   }
-  -
+- Key when mapping
+
+# SPAs
+
+- Non SPA:
+  client request(I want to load)--> DB Server
+  clent response (JS HTML CSS)<-- DB Server
+
+- SPA:
+  client request(I want to load)--> DB Server
+  clent response (JS"withReact" HTML CSS)<-- DB Server
+  now when you navigate no need for new Request cause React itself will build the View.
