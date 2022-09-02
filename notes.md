@@ -104,3 +104,8 @@ npm list -g cowsay
   client request(I want to load)--> DB Server
   clent response (JS"withReact" HTML CSS)<-- DB Server
   now when you navigate no need for new Request cause React itself will build the View.
+
+# Immutability
+
+these guys do not change the old array. They create a copy of them.
+.map .filter .reduce
