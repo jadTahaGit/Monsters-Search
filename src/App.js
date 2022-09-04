@@ -35,6 +35,15 @@ class App extends Component {
       );
   }
 
+  onSearchChange = (event) => {
+    // console.log(event.target.value);
+    const searchField = event.target.value.toLocaleLowerCase();
+    // Immutability
+    this.setState(() => {
+      return { searchField };
+    });
+  };
+
   render() {
     console.log('render');
 
@@ -48,14 +57,7 @@ class App extends Component {
           type="search"
           className="search-box"
           placeholder="search Monster"
-          onChange={(event) => {
-            // console.log(event.target.value);
-            const searchField = event.target.value.toLocaleLowerCase();
-            // Immutability
-            this.setState(() => {
-              return { searchField };
-            });
-          }}
+          onChange={this.onSearchChange}
         />
         {filteredMonsters.map((monster) => {
           return <h1 key={monster.id}>{monster.name}</h1>;
