@@ -109,3 +109,16 @@ npm list -g cowsay
 
 these guys do not change the old array. They create a copy of them.
 .map .filter .reduce
+
+# JS Optimizations
+
+What is really happining when React is Rendering to JS.
+Look at render Method.
+Every Time React want to update the DOM it calls the render Method.
+The (event)=>{...} is an Anonymus Function . JS run this function. So every time render runs the function is recreated. "slight less Performance"
+
+# Component
+
+- Tight together the UI Visual Representation & Functionalities (Capsulation)
+- Reusable Components: Search funct & List. So Generalize more till we have single responsibility. SOC: Separation of Concepts. Here is where Decision making gets to important.
+- In our case the Search Bar is tight to our list --> we need to generilze them ! & separate them.
