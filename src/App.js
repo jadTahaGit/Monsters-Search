@@ -7,8 +7,6 @@ import './App.css';
 class App extends Component {
   // whenever constructed
   constructor() {
-    console.log('constructor');
-
     // call the constructor of extended Class "Component"
     super();
 
@@ -20,8 +18,6 @@ class App extends Component {
   }
 
   componentDidMount() {
-    console.log('componentDidMount');
-
     fetch('https://jsonplaceholder.typicode.com/users')
       .then((response) => response.json())
       .then((users) =>
@@ -46,8 +42,6 @@ class App extends Component {
   };
 
   render() {
-    console.log('render');
-
     // Destructing
     const { monsters, searchField } = this.state;
     const { onSearchChange } = this;
@@ -68,7 +62,7 @@ class App extends Component {
           return <h1 key={monster.id}>{monster.name}</h1>;
         })} */}
 
-        <CardList />
+        <CardList monster={monsters} />
       </div>
     );
   }
