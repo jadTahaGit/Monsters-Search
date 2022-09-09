@@ -1,7 +1,5 @@
 import { Component } from 'react';
 import CardList from './components/card-list/card-list';
-
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -62,7 +60,7 @@ class App extends Component {
           return <h1 key={monster.id}>{monster.name}</h1>;
         })} */}
 
-        <CardList monster={monsters} />
+        <CardList monster={'monsters are here'} anything={[1, 'a']} />
       </div>
     );
   }
