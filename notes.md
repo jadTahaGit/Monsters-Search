@@ -122,3 +122,8 @@ The (event)=>{...} is an Anonymus Function . JS run this function. So every time
 - Tight together the UI Visual Representation & Functionalities (Capsulation)
 - Reusable Components: Search funct & List. So Generalize more till we have single responsibility. SOC: Separation of Concepts. Here is where Decision making gets to important.
 - In our case the Search Bar is tight to our list --> we need to generilze them ! & separate them.
+
+# React Rerender (update) in 2 cases:
+
+- state has changed
+- props has been passed
