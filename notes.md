@@ -127,3 +127,9 @@ The (event)=>{...} is an Anonymus Function . JS run this function. So every time
 
 - state has changed
 - props has been passed
+
+# Lifecycles
+
+Mounting Updating Unmounting
+
+Functional Components(no Life cycles) just return the JSX & it does not go through these different phases in Class Components (render, mount, construct....)
