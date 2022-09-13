@@ -133,3 +133,18 @@ The (event)=>{...} is an Anonymus Function . JS run this function. So every time
 Mounting Updating Unmounting
 
 Functional Components(no Life cycles) just return the JSX & it does not go through these different phases in Class Components (render, mount, construct....)
+
+# Pure vs Impure functions & Sideeffects
+
+pure function is when the result it wil return is completly dependet just on the its parametrer
+ex.of Pure fucnction: const pure=(a,b)=>{ return a+b;}
+ex.of Impure fucnction: const c=10; const impure=(a,b)=>{ return a+b+c;}
+
+side effects: "c will change when calling functB althoagh it is out of its scope"
+const c=10;
+const functB=(a,b)=>{
+c = a+b;
+return a\*b;
+}
+
+In React we are using Impure Functions & we have side Effects
