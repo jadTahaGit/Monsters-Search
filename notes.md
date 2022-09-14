@@ -162,3 +162,29 @@ In React we are using Impure Functions & we have side Effects
   .then((response) => response.json())
   .then((users) => setMonsters(users));
   }, []);
+
+# React v18:
+
+- yaern upgrade react react-dom --latest
+- v18 ... root in App.js
+- React Strict Mode Changes (4 rendering instead of 2) --> 2 basicly with REACT STRICT... (install the React Extension & then 2 are then light gray)
+
+# Dom vs virtual DOM
+
+- Real DOM is expensive because you need to go throagh
+- Duplicates the REAL DOM which is the virtual DOM (virtual Representation of the Real DOM)
+- Ex: Searchbox "lea"
+  1st) copy of the virtual DOM (virtual DOM is a Snapshot)
+  2nd) Lea --> set the State (monsters are changed --> CardList is gonna change)
+  3rd) unmounting the card without lea --> new virtual DOM (compares to snapshot) see the difference points & make these changes onto the REAL DOM
+
+# Pure React
+
+build an app with pure HTML JS & React without JSX
+
+- JSX
+- React
+- React DOM
+
+DOM Paint Flashing (chrome extention)
+FORKING the code (github)
