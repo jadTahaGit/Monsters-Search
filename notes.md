@@ -148,3 +148,17 @@ return a\*b;
 }
 
 In React we are using Impure Functions & we have side Effects
+
+# Functional Components
+
+- It renders when the searchField is modified & not when setSearchField is called!
+- Fetching should not be written directly it should be written in a useEffect in functional Component. The code below is an infinte Loop!
+  fetch('https://jsonplaceholder.typicode.com/users')
+  .then((response) => response.json())
+  .then((users) => setMonsters(users));
+- For that we use useEffect - array empty mean effect will fire one Time
+  useEffect(() => {
+  fetch('https://jsonplaceholder.typicode.com/users')
+  .then((response) => response.json())
+  .then((users) => setMonsters(users));
+  }, []);
